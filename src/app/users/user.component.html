@@ -1,0 +1,9 @@
+<button class="btn" (click)="goToCreate()">Create a User</button>
+<div class="book-card-container" *ngFor="let user of users; let i = index">
+  <div class="book-card" [routerLink]="['/users',user.id]">
+    <img class="user-cover"  alt="user">
+    <P>ID: {{book.id}}</P>
+   
+  </div>
+  <button class="delete" (click)="deleteBook(book.id)">X</button>
+</div>
